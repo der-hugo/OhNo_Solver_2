@@ -6,10 +6,16 @@ using UnityEngine.UI;
 
 public class BackgroundSetter : MonoBehaviour
 {
+    #region PRIVATE MEMBERS
 
     private Image image;
 
     private InputField inputField;
+
+    #endregion PRIVATE MEMBERS
+
+
+    #region UNITY METHODS
 
     // Use this for initialization
     void Start()
@@ -17,6 +23,11 @@ public class BackgroundSetter : MonoBehaviour
         image = GetComponent<Image>();
         inputField = GetComponentInChildren<InputField>();
     }
+
+    #endregion UNITY METHODS
+
+
+    #region PUBLIC METHODS
 
     public void SetBackground()
     {
@@ -37,4 +48,6 @@ public class BackgroundSetter : MonoBehaviour
                 break;
         }
     }
+
+    #endregion PUBLIC METHODS
 }
